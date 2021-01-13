@@ -1,0 +1,331 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Custom CSS */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+  background-color: #1d2029;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.header {
+  padding: 32px 0;
+}
+
+.header-container {
+  align-items: flex-start;
+}
+.header h1 {
+  color: #fff;
+  font-size: 24px;
+  font-weight: 700;
+}
+.header p {
+  color: #7882a0;
+}
+
+.btn {
+  width: 70px;
+  height: 30px;
+  border-radius: 20px;
+  background: linear-gradient(to right, #3974a3, #39c99d) left top no-repeat;
+  margin-left: 10px;
+}
+
+.btn-circle {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: black;
+  justify-content: flex-start;
+  margin-left: 5px;
+}
+
+/* Large Section */
+
+.large-item {
+  flex: 0 1 22%;
+  color: white;
+  background-color: #252b43;
+  text-align: center;
+  height: 250px;
+  border-radius: 6px;
+  position: relative;
+}
+
+.item::after {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 6px;
+  content: "";
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.item-1::after {
+  background-color: #188ff5;
+}
+
+.item-3::after {
+  background: linear-gradient(to right, #fdbc69, #e05391) no-repeat;
+}
+
+.item-4::after {
+  background-color: #c30328;
+}
+
+.large-item-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 100%;
+}
+
+.social-icon {
+  font-weight: 600;
+  font-size: 13px;
+  color: #7d87a9;
+}
+.large-item-container i.fab {
+  font-size: 25px;
+  vertical-align: middle;
+  margin-right: 8px;
+}
+
+i.fab {
+  color: #1790f1;
+}
+
+i.fab.fa-instagram {
+  background: linear-gradient(to top right, #fdbc69, #e05391) no-repeat;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+i.fab.fa-youtube {
+  color: #ab0c30;
+}
+.large-heading {
+  font-size: 50px;
+  margin-bottom: 0;
+  font-weight: 700;
+}
+.followers {
+  letter-spacing: 4px;
+  color: #484e6d;
+}
+
+.follower-increased {
+  color: #3f9085;
+  font-weight: 600;
+}
+
+.follower-increased i {
+  margin-right: 5px;
+}
+
+.follower-decreased {
+  color: #ac4354;
+  font-weight: 600;
+}
+
+/* Small Board */
+
+h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: white;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.small-board {
+  padding: 35px;
+}
+
+.small-card-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.small-card-item {
+  flex: 0 1 22%;
+  background-color: #252b43;
+  height: 150px;
+  margin-bottom: 25px;
+  border-radius: 6px;
+  padding: 15px 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.small-card-item .fab {
+  font-size: 20px;
+}
+.meta-data {
+  font-size: 18px;
+  color:#545B77;
+  font-weight: 500;
+}
+
+.sub-heading {
+  font-size: 40px;
+  color: #fff;
+  font-weight: 600;
+}
